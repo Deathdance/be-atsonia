@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Surf</title>
+		<link href="sliderstyle.css" type="text/css" rel="stylesheet">
+		<link href="surf.css" type="text/css" rel="stylesheet">
+		<link href='media-player.css' rel='stylesheet' />
+		<script src='media-player.js'></script>
+	</head>
+<body>
+	<header id="top_header">
+			<h1>Surfeando!</h1>
+			<img class="logo"src="images/logo.png" />
+			<section class="menu">
+					<div class="submenu">
+						<span><a >Home</a></span>
+						<span><a >Playas</a></span>
+						<span><a >Tablas</a></span>		
+					</div>
+			</section>	
+			
+	</header>
+			
+			<section id="main_section">
+				<div id="cuerpo">
+						<h2>BIENVENIDOS!</h2>
+					<p>
+						Tu pagina web sobre el surf, playas, tablas y mucho mas, deleitate con nuestras fotos!
+					</p>
+					<div id="slider"> 
+				        <input type="radio" id="control1" name="controls"/>
+				        <label for="control1"></label>
+				        <input type="radio" id="control2" name="controls"/>
+				        <label for="control2"></label>
+				        <input type="radio" id="control3" name="controls"/>
+				        <label for="control3"></label>
+						<div id="sliderinner">
+				            <ul>
+				                <li>
+				                    <img src="images/argazkia1.jpg" />
+				                    <div class="description">
+				 
+				                        <div class="description-text">
+				                            <h2>Asombrosa!</h2>
+				                            <p>Brillante ola!</p>
+				                        </div>
+				                    </div>
+				                </li>
+				                <li>
+				                    <img src="images/argazkia2.jpg" />
+				                    <div class="description">
+
+				                        <div class="description-text">
+				                            <h2>Drisfrutala</h2>
+				                            <p>La cresta es perfecta</p>
+				                        </div>
+				                    </div>
+				                </li>
+				                <li>
+				                    <img src="images/argazkia3.jpg" />
+				                    <div class="description">
+				  
+				                        <div class="description-text">
+				                            <h2>Aprende</h2>
+				                            <p>Somos muchos</p>
+				                        </div>
+				                    </div>
+				                </li>
+				            </ul>
+				         </div>
+    				</div><!--slider-->
+    				<br><br>
+					<div class="video">
+						<h3>Disfruta de la accion!</h3>
+					
+					<div id='media-player'>
+						<video id='media-video' controls>
+								<source src='video.mp4' type='video/mp4'>
+								<!--<source src='parrots.webm' type='video/webm'>-->
+						</video>
+						<div id='media-controls'>
+								<progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+								<button id='replay-button' class='replay' title='replay' onclick='replayMedia();'>Replay</button>	
+								<button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'>Play</button>
+								<button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button>
+								<button id='volume-inc-button' class='volume-plus' title='increase volume' onclick='changeVolume("+");'>Increase volume</button>
+								<button id='volume-dec-button' class='volume-minus' title='decrease volume' onclick='changeVolume("-");'>Decrease volume</button>
+								<button id='mute-button' class='mute' title='mute' onclick='toggleMute("true");'>Mute</button>	
+						</div>
+					</div>
+
+					<p>
+						No pierdas ni un solo isntante con nosotros!<br><br>
+					</p>
+					</div>
+				</div>
+
+
+
+
+			</section>
+			<br><br><br>
+			<footer id="the_footer">
+			<br>
+			Copyright © Gorka Perez 2015
+			</footer>
+</body>
+</html>
